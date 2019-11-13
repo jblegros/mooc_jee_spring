@@ -83,7 +83,7 @@ La jsp reste accessible directement via une url car elle est présente à la rac
 Il est possible de préparer une archive web java (war) de notre application pour faciliter la distribution et le déploiement.    
 Un "war" est un fichier compressé au format zip contenant une arborescence particulière pour être utilisée par un serveur d'application java.
 
-* Utilisez la commande "jar" pour créer une archive nommée "exo103.war" contenant les fichiers de votre application web. Inutile d'y inclure les fichiers source java, ils ne sont pas utilisés par tomcat.
+* Utilisez la commande "jar" pour créer une archive nommée "app.war" dans webapps, elle contiendra les fichiers de votre application web. Inutile d'y inclure les fichiers source java, ils ne sont pas utilisés par tomcat.
 
 Le contenu du war devrait donc être :
 ```
