@@ -29,13 +29,13 @@ Sinon, il faut télécharger les librairies [junit](https://repo1.maven.org/mave
 
 Nous allons utiliser le DAO pour l'enregistrement des utilisateurs.
 
-* Complétez RegisterServlet et utilisez le DAO
+* Complétez [RegisterServlet](WEB-INF/classes/user/RegisterServlet.java) et utilisez le DAO
 * Complétez register.jsp, et notamment : 
   * pensez à traiter les différents cas d'erreur,
   * affichez des messages d'erreur en rapport avec le cas rencontré,
-  * mettez en avant les champs du formulaire en erreur.
+  * mettez en avant les champs du formulaire en erreur à l'aide de bootstrap.
 
 A cette étape, vous devriez pouvoir faire passer le test "auth/SigninCheck"
 
-* Reprenez votre solution de l'exercice 1/02 en utilisant ce DAO pour la servlet d'authentification
+* Si vous l'avez réalisé, reprenez votre solution de l'exercice 1/02 en utilisant ce DAO pour la servlet d'authentification
 
