@@ -5,22 +5,24 @@ Prenez soin d'avoir, au final, un contexte web nommé "exo201".
 
 ## Implémentation d'un DAO avec JDBC
 
+* Implémentez [UserDaoSqlite](WEB-INF/classes/user/UserDaoSqlite.java)
+
+exemple de commande de compilation depuis webapps/exo203 :
+
+    javac -cp WEB-INF/classes -d WEB-INF/classes WEB-INF/classes/user/UserDaoSqlite.java
+
+Pour tester le Dao, une classe de test unitaire est fournie. 
+Vous devriez être en mesure de faire passer le "TestUserJDBC".  
+Vous pouvez la lancer en bash avec le script `runTests.sh`
+
+Sinon, il faut télécharger les librairies [junit](https://repo1.maven.org/maven2/junit/junit/4.12/junit-4.12.jar), [hamcrest](https://repo1.maven.org/maven2/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar) et le driver [JDBC SQLite Driver](https://oss.sonatype.org/content/repositories/releases/org/xerial/sqlite-jdbc/3.20.0/sqlite-jdbc-3.20.0.jar). Mettez le drivers dans WEB-INF/lib, il sera utile à tomcat ensuite. Puis, il faut compiler et lancer les tests à l'aide des commandes :
+
+    javac -cp WEB-INF/classes:junit-4.12.jar:hamcrest-core-1.3.jar -d WEB-INF/classes WEB-INF/classes/TestUserJDBC.java WEB-INF/classes/auth/SigninCheck.java
+	java -cp WEB-INF/classes:junit-4.12.jar:hamcrest-core-1.3.jar:WEB-INF/lib/sqlite-jdbc-3.20.0.jar org.junit.runner.JUnitCore TestUserJDBC
+
+**ATTENTION** sous windows le séparateur de classpath est `;` et non `:`
+
 * Téléchargez [JDBC SQLite Driver](https://oss.sonatype.org/content/repositories/releases/org/xerial/sqlite-jdbc/3.20.0/sqlite-jdbc-3.20.0.jar), et placez le dans le répertoire WEB-INF/lib
-* Complétez [UserDaoSqlite](WEB-INF/classes/user/UserDaoSqlite.java)
-
-A cette étape, vous devriez être en mesure de faire passer le "TestUserJDBC".  
-Un script est fourni pour exécuter ces tests, sinon :  
-
-* téléchargez la librairie [junit](http://central.maven.org/maven2/junit/junit/4.12/junit-4.12.jar)
-* téléchargez la librairie [hamcrest](http://central.maven.org/maven2/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar)
-* compilez les classes de tests avec la commande  
-`javac -cp .:junit-4.12.jar:hamcrest-core-1.3.jar TestUserJDBC.java auth/SigninCheck.java`
-* lancez les tests avec la commande  
-`java -cp .:junit-4.12.jar:hamcrest-core-1.3.jar:../lib/sqlite-jdbc-3.20.0.jar org.junit.runner.JUnitCore TestUserJDBC`
-
-Ceci suppose que vous ayez mis les librairies junit et hamcrest dans WEB-INF/classes et la librairie sqlite-jdbc dans WEB-INF/lib. Aussi, au moment de lancer les tests, vous devriez être dans WEB-INF/classes.  
-Notez que sous windows le séparateur de classpath est ';' et non ':'.
-
 
 
 ## Utilisation d'un DAO avec une servlet/jsp 
