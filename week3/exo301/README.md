@@ -28,10 +28,20 @@ lot représente un texte permettant de dissocier les livraisons de produits frai
 * Ajouter les annotations JPA à ces classes
 * Implémenter les méthodes de CatalogDao dans CatalogDaoJPAImpl
 
-Vous devriez être en mesure de lancer les tests :
+
+## Tests
+
+Après avoir compléter vos classes java
 
 * test.model.ModelAttributes
 * test.model.JpaAnnotations
+
+Vous pouvez normalement utiliser la dernière version stable de Hibernate 5.  
+
 * test.model.JpaContext
+
+Les tests sont fournis avec une base H2 déjà contituée, en version 1.4.196,  
+assurez-vous de placer cette version dans vos dépendances.
+
 * test.dao.CatalogDaoTest
 
