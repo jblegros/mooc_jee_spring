@@ -82,7 +82,7 @@ public class JpaAnnotations {
 		assertHasNbAnnotation( k, 1, temporalAnnotation );
 		
 		assertHasAssociation( k, Customer.class, manyToOneAnnotation );
-		assertHasAssociation( k, List.class, oneToManyAnnotation );
+		assertHasAssociation( k, List.class, manyToManyAnnotation );
 	}
 	
 	@Test public void testCustomer() {
