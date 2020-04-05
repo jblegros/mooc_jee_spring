@@ -1,7 +1,6 @@
 # Exercice 1/03
 
 Cet exercice met en oeuvre l'ensemble des notions vues cette semaine.  
-Il remplace les deux premiers exercices présentés dans la session précédente de ce cours.
 
 Nous allons créer un sac permettant de ranger une liste d'objets.  
 Ce sac pourrait être vu comme un sac d'achat sur internet, ou le sac magique d'items d'un jeu.
