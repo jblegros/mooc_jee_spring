@@ -1,6 +1,6 @@
 # Semaine 1
 
-* [exo103](exo103) est un exercie qui vous propose de développer un panier de course à l'aide de toutes les notions vues cette semaine.
+* [exo103](exo103) est un exercice qui vous propose de développer un panier de course à l'aide de toutes les notions vues cette semaine.
 
 Les exercices suivants ont été présentés lors des sessions précédentes de ce cours.
 
